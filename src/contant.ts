@@ -25,6 +25,8 @@ const iamgeLanguage = {
     html: IcomHtml
 }
 export const RenderImage = (name: any) => {
-
-    return iamgeLanguage?.[name];
+    if (name in iamgeLanguage) {
+        return iamgeLanguage[name as keyof typeof iamgeLanguage];
+    }
+    return undefined; // Hoặc giá trị mặc định khác
 };

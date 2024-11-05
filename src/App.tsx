@@ -14,7 +14,7 @@ const initialFileStructure: FileSystem = {
       "Header.ts": { content: '\nfunction greet(name) {\n\tconsole.log("Hello, " + name + "!");\n}\n\ngreet("Alex");\n' },
       "Footer.js": { content: "Footer Component Content" }
     },
-    "App.js": { content: "App Component Content" },
+    "App.ts": { content: '\nfunction greet(name : string) {\n\tconsole.log("Hello, " + name + "!");\n}\n\ngreet("Alex");\n' },
     "index.js": { content: "Index File Content" }
   },
   public: {
