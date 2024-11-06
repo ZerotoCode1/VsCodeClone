@@ -1,6 +1,6 @@
+import { Editor } from "@monaco-editor/react";
 import React, { ReactNode, useRef, useState } from "react";
 import Close from "./components/Icons/Close";
-import { Editor } from "@monaco-editor/react";
 import Output from "./components/OutPut";
 import { language, RenderImage } from "./contant";
 
@@ -118,7 +118,6 @@ const App: React.FC = () => {
     setSelectedFile(fileName);
     console.log(content)
   };
-
 const handleCreateFolder = (folderPath: string) => {
   const paths = folderPath.split("/").filter(Boolean);
   let currentFolder = fileStructure;
